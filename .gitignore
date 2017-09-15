@@ -6,3 +6,6 @@
 packages/
 *.user
 *.suo
+/.nuget/NuGet.Config
+/.nuget/NuGet.exe
+/.nuget/NuGet.targets
