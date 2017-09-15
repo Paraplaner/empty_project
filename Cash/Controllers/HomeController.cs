@@ -6,7 +6,7 @@ namespace Cash.Controllers
     {
         public ActionResult Index()
         {
-            return Content("paraplaner cash webapp");
+            return View();
         }
     }
 }
