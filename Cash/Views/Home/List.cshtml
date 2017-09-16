@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "Просмотр списка записей";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Просмотр списка записей (это /Views/Home/List.cshtml)</h2>
+Внешний вид сейчас не важен, но интерфейс на HTML+CSS+Javascript.
+<br/><br/>
+Таблица с фиктивными данными. Далее данные будут выводиться из Базы Данных.
+<table border="1" cellpadding="10">
+    <thead>
+    <tr>
+        <td>
+            Идентификатор
+        </td>
+        <td>
+            Дата
+        </td>
+        <td>
+            Категория
+        </td>
+        <td>
+            Сумма
+        </td>
+        <td>
+            Комментарий
+        </td>
+    </tr>
+    </thead>
+    <tbody>
+    @for (var i = 0; i < 10; i++)
+    {
+        <tr>
+            <td>
+                @i
+            </td>
+            <td>
+                @DateTime.Now.ToString("dd.MM.yyyy")
+            </td>
+            <td>
+                Без категории
+            </td>
+            <td>
+                @{
+                    var r = new Random(i + Environment.TickCount);
+                    var randomAmount = r.Next(1000000);
+                    randomAmount.ToString("n2");
+                }
+                @randomAmount
+            </td>
+            <td>
+                Комментарий
+            </td>
+        </tr>        
+    }
+    </tbody>
+</table>
+
+@Html.ActionLink("На главную", "Index", "Home")

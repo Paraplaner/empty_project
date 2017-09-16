@@ -8,5 +8,13 @@ namespace Cash.Controllers
         {
             return View();
         }
+
+        /// <summary>
+        /// Просмотр списка записей.
+        /// </summary>
+        public ActionResult List()
+        {
+            return View();
+        }
     }
 }
