@@ -89,12 +89,18 @@
     <Content Include="Scripts\readme.txt" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\List.cshtml" />
+    <Content Include="Views\Record\Add.cshtml" />
+    <Content Include="Views\Settings\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Statistics\Index.cshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RecordController.cs" />
+    <Compile Include="Controllers\SettingsController.cs" />
+    <Compile Include="Controllers\StatisticsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
