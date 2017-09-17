@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IList<Cash.Models.CashflowRecord>
+
+@{
     ViewBag.Title = "Просмотр списка записей";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -28,7 +30,7 @@
     </tr>
     </thead>
     <tbody>
-    @for (var i = 0; i < 10; i++)
+    @for (var i = 0; i < 5; i++)
     {
         <tr>
             <td>
@@ -52,6 +54,27 @@
                 Комментарий
             </td>
         </tr>        
+    }
+    
+    @foreach (var cashflowRecord in @Model)
+    {
+        <tr>
+            <td>
+                @cashflowRecord.Id
+            </td>
+            <td>
+                @cashflowRecord.DateTime.ToString("dd.MM.yyyy")
+            </td>
+            <td>
+                @cashflowRecord.Category.Title
+            </td>
+            <td>
+                @cashflowRecord.Amount
+            </td>
+            <td>
+                @cashflowRecord.Comments
+            </td>
+        </tr>
     }
     </tbody>
 </table>

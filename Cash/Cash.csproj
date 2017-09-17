@@ -85,7 +85,6 @@
     <Content Include="App_Data\placeholder.txt" />
     <Content Include="Content\readme.txt" />
     <Content Include="Global.asax" />
-    <Content Include="Models\placeholder.txt" />
     <Content Include="Scripts\readme.txt" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\List.cshtml" />
@@ -104,6 +103,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\CashflowRecord.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Entity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
