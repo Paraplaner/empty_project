@@ -1,0 +1,20 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Submit", "Account"))
+{
+    <fieldset>
+        <legend>Добавить счет</legend>
+        <div>
+            <label for="Title">Название счета:</label>
+            <input type="text" name="Title" value="" />
+        </div>
+        <div>
+            <label>&nbsp;</label>
+            <input type="submit" value="submit" text="Добавить" class="submit" />
+        </div>
+    </fieldset>
+}
+
+
